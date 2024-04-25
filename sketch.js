@@ -4,7 +4,7 @@ let data = []; //the list of data from arduino
 
 let video;
 let w = 640;
-let h = 500;
+let h = 480;
 let distance = 0;
 let pboxsize = 10;
 let pcolorMultiplier = 1;
@@ -93,6 +93,8 @@ function draw() {
   let colorMultiplier = lerp(pcolorMultiplier, currentColorMultiplier, 0.1)
   // console.log(boxSize)
 
+  push()
+  //rotate(90)
   
   for (let y=0;y<video.height;y+=int(7)){
     for (let x=0; x<video.width; x+=int(7)){
@@ -110,6 +112,7 @@ function draw() {
       pop()
     }
   }
+  pop()
   pboxsize = boxSize;
   pcolorMultiplier = colorMultiplier;
 }
