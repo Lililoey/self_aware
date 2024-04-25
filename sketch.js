@@ -85,7 +85,7 @@ function draw() {
   //console.log (video.pixels.length,width*height*4);
   // console.log()
   
-  let cboxSize = map(distance, 280, 4, 5, 26, true);
+  let cboxSize = map(distance, 231, 4, 4, 26, true);
   //console.log(cboxSize)
   let boxSize = lerp(pboxsize, cboxSize, 0.1);
 
